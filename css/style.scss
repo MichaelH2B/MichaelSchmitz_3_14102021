@@ -30,11 +30,11 @@ a {
 
 /*LOADER*/
 #hideme {
-  -moz-animation: cssAnimation 0s ease-in 4s forwards;
+  -moz-animation: cssAnimation 0s ease-in 3s forwards;
   /* Firefox */
-  -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+  -webkit-animation: cssAnimation 0s ease-in 3s forwards;
   /* Safari and Chrome */
-  animation: cssAnimation 0s ease-in 4s forwards;
+  animation: cssAnimation 0s ease-in 3s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -69,7 +69,7 @@ a {
       position: fixed;
       border: 7px solid transparent;
       border-top-color: $color-primary;
-      animation: spin 2s linear;
+      animation: spin 1s linear;
     }
   }
 }
@@ -87,7 +87,7 @@ a {
   left: 10px;
   right: 10px;
   border-top-color: $color-secondary;
-  animation: spin 3s linear;
+  animation: spin 2s linear;
 }
 .loader::after {
   top: 25px;
@@ -95,7 +95,7 @@ a {
   left: 25px;
   right: 25px;
   border-top-color: $color-tertiary;
-  animation: spin 3.7s linear;
+  animation: spin 2.7s linear;
 }
 @keyframes spin {
   0% {
@@ -400,10 +400,10 @@ a {
   background-color: rgb(82, 82, 82);
   .footer_blocs {
     display: inline;
-    padding: 0 40px;
-    width: 100%;
+    width: 325px;
     @media (min-width: 800px) {
       height: 140px;
+      width: 100%;
     }
     .logo {
       font-family: "Shrikhand";
