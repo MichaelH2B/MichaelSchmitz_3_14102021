@@ -24,9 +24,6 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.fas {
-  width: 30px;
-}
 
 /*LOADER*/
 #hideme {
@@ -194,8 +191,8 @@ a {
     display: flex;
     justify-content: flex-start;
     width: 350px;
-    @media (min-width: 1110px) {
-      justify-content: center;
+    @media (min-width: 1210px) {
+      width: 1040px;
       margin-left: 20px;
     }
   }
@@ -206,7 +203,7 @@ a {
     flex-direction: column;
     position: relative;
     margin-bottom: 15px;
-    @media (min-width: 1110px) {
+    @media (min-width: 1210px) {
       flex-direction: row;
     }
     .fun_step {
@@ -214,14 +211,15 @@ a {
       align-items: center;
       background: #f6f6f6;
       height: auto;
-      width: 350px;
+      width: 100%;
       margin: 10px 20px;
       padding: 10px 20px;
       border-radius: 20px;
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-      @media (min-width: 850px) {
+      @media (min-width: 1210px) {
         padding: 10px 30px 10px 5px;
         position: relative;
+        width: 33.33%;
       }
       &:hover {
         opacity: 0.9;
@@ -244,26 +242,23 @@ a {
         text-align: center;
         position: relative;
         left: -30px;
-        @media (min-width: 850px) {
+        @media (min-width: 1210px) {
           left: -15px;
         }
       }
       .fun_icon {
         color: #7e7e7e;
         width: 40px;
-        @media (min-width: 850px) {
-          margin: 0 10px 0 30px;
+        @media (min-width: 1210px) {
+          margin: 0 5px 0 15px;
         }
       }
       .fun_text {
         font-weight: 400;
+        white-space: nowrap;
       }
     }
   }
-}
-.restaurant_title {
-  display: flex;
-  width: 100%;
 }
 /* RESTAURANTS (section5) */
 .restaurants {
@@ -279,7 +274,7 @@ a {
     justify-content: center;
     width: 325px;
     @media (min-width: 800px) {
-      width: 690px;
+      width: 700px;
     }
     .restaurant_title {
       display: flex;
@@ -293,8 +288,9 @@ a {
     height: auto;
     @media (min-width: 800px) {
       flex-direction: row;
+      justify-content: center;
       flex-wrap: wrap;
-      width: 730px;
+      max-width: 750px;
     }
     .restaurant_card {
       display: flex;

@@ -21,10 +21,6 @@ a {
   flex-direction: column;
 }
 
-.fas {
-  width: 30px;
-}
-
 /*LOADER*/
 #hideme {
   -moz-animation: cssAnimation 0s ease-in 3s forwards;
@@ -216,9 +212,9 @@ a {
   width: 350px;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1210px) {
   .fun_content .fun_title {
-    justify-content: center;
+    width: 1040px;
     margin-left: 20px;
   }
 }
@@ -232,7 +228,7 @@ a {
   margin-bottom: 15px;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1210px) {
   .fun_content .fun_steps {
     flex-direction: row;
   }
@@ -243,17 +239,18 @@ a {
   align-items: center;
   background: #f6f6f6;
   height: auto;
-  width: 350px;
+  width: 100%;
   margin: 10px 20px;
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1210px) {
   .fun_content .fun_steps .fun_step {
     padding: 10px 30px 10px 5px;
     position: relative;
+    width: 33.33%;
   }
 }
 
@@ -282,7 +279,7 @@ a {
   left: -30px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1210px) {
   .fun_content .fun_steps .fun_step .fun_number {
     left: -15px;
   }
@@ -293,19 +290,15 @@ a {
   width: 40px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1210px) {
   .fun_content .fun_steps .fun_step .fun_icon {
-    margin: 0 10px 0 30px;
+    margin: 0 5px 0 15px;
   }
 }
 
 .fun_content .fun_steps .fun_step .fun_text {
   font-weight: 400;
-}
-
-.restaurant_title {
-  display: flex;
-  width: 100%;
+  white-space: nowrap;
 }
 
 /* RESTAURANTS (section5) */
@@ -327,7 +320,7 @@ a {
 
 @media (min-width: 800px) {
   .restaurants .restaurants_title {
-    width: 690px;
+    width: 700px;
   }
 }
 
@@ -346,8 +339,9 @@ a {
 @media (min-width: 800px) {
   .restaurants .restaurant_cards {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 730px;
+    max-width: 750px;
   }
 }
 
