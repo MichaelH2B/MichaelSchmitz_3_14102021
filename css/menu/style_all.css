@@ -131,7 +131,7 @@ body {
   .section_menu .bloc_menu #menu {
     flex-direction: row;
     align-items: baseline;
-    width: 90%;
+    width: 95%;
   }
 }
 
