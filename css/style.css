@@ -209,13 +209,12 @@ a {
 .fun_content .fun_title {
   display: flex;
   justify-content: flex-start;
-  width: 350px;
+  width: 320px;
 }
 
 @media (min-width: 1210px) {
   .fun_content .fun_title {
-    width: 1040px;
-    margin-left: 20px;
+    width: 940px;
   }
 }
 
