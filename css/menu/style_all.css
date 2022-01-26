@@ -86,6 +86,7 @@ body {
 .section_menu .bloc_menu .bloc_title_icon .heart {
   width: 30px;
   position: relative;
+  cursor: pointer;
 }
 
 .section_menu .bloc_menu .bloc_title_icon .heart .icon_heart {
@@ -183,6 +184,7 @@ body {
   border-radius: 15px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.16);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .section_menu .bloc_menu #menu .menu .menu_bloc:hover .checkbox {
