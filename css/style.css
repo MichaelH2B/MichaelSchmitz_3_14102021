@@ -63,7 +63,6 @@ a {
   height: 100px;
   margin: auto;
   border-radius: 50%;
-  position: fixed;
   border: 7px solid transparent;
   border-top-color: #9356dc;
   -webkit-animation: spin 1s linear;
