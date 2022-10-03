@@ -16,7 +16,6 @@ body {
   text-decoration: none;
   color: black;
 }
-
 .header_arrow a {
   color: black;
 }
@@ -24,7 +23,8 @@ body {
 .img2 {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header_logo {
@@ -34,7 +34,6 @@ body {
   margin: 0;
   height: 65px;
 }
-
 .header_logo .img1 {
   height: 30px;
   margin-top: 20px;
@@ -45,7 +44,6 @@ body {
     height: 750px;
   }
 }
-
 /*Section Menu*/
 .section_menu {
   display: flex;
@@ -53,7 +51,6 @@ body {
   width: 100%;
   background-color: white;
 }
-
 .section_menu .bloc_menu {
   display: flex;
   flex-direction: column;
@@ -64,7 +61,6 @@ body {
   margin-top: -50px;
   position: relative;
 }
-
 .section_menu .bloc_menu .bloc_title_icon {
   display: flex;
   justify-content: space-between;
@@ -72,29 +68,24 @@ body {
   width: 85%;
   margin-top: 10px;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .menu_header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .menu_header .menu_title {
   font-family: "Shrikhand";
 }
-
 .section_menu .bloc_menu .bloc_title_icon .heart {
   width: 30px;
   position: relative;
   cursor: pointer;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .heart .icon_heart {
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   color: white;
   font-size: 24px;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .heart .icon_heart .on {
   position: absolute;
   width: 30px;
@@ -103,11 +94,9 @@ body {
   opacity: 0;
   transition: all 0.4s ease;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .heart .icon_heart .off {
   transition: all 0.4s ease;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .heart .icon_heart:hover .on {
   opacity: 1;
   background: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
@@ -115,11 +104,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .section_menu .bloc_menu .bloc_title_icon .heart .icon_heart:hover .off {
   opacity: 0;
 }
-
 .section_menu .bloc_menu #menu {
   display: flex;
   justify-content: center;
@@ -127,7 +114,6 @@ body {
   flex-direction: column;
   width: 100%;
 }
-
 @media (min-width: 1300px) {
   .section_menu .bloc_menu #menu {
     flex-direction: row;
@@ -135,7 +121,6 @@ body {
     width: 95%;
   }
 }
-
 .section_menu .bloc_menu #menu .column {
   width: 100%;
   align-items: center;
@@ -143,19 +128,16 @@ body {
   flex-direction: column;
   display: flex;
 }
-
 .section_menu .bloc_menu #menu .column .menu_subtitle {
   display: flex;
   width: 95%;
   margin: 0 0 5px 20px;
   position: relative;
 }
-
 .section_menu .bloc_menu #menu .column .menu_subtitle .subtitle_menu {
   font-weight: 300;
   font-size: 16px;
 }
-
 .section_menu .bloc_menu #menu .column .menu_subtitle .subtitle_menu:after {
   content: "";
   width: 40px;
@@ -165,7 +147,6 @@ body {
   left: 0;
   bottom: 10px;
 }
-
 .section_menu .bloc_menu #menu .menu {
   display: flex;
   flex-direction: column;
@@ -173,7 +154,6 @@ body {
   width: 95%;
   margin-bottom: 20px;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc {
   display: flex;
   align-items: center;
@@ -186,23 +166,18 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc:hover .checkbox {
   margin-right: 0;
   cursor: pointer;
   transition: all 0.6s ease;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc:hover .checkbox i {
-  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc .menu_bloc_title_subtitle {
   flex: 1;
   width: 100%;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc .menu_bloc_title_subtitle .title {
   font-size: 16px;
   font-weight: bold;
@@ -212,7 +187,6 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc .menu_bloc_title_subtitle .subtitle {
   font-size: 14px;
   margin: 5px 0 10px 15px;
@@ -221,7 +195,6 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc .price {
   display: flex;
   height: 70%;
@@ -230,7 +203,6 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc .checkbox {
   height: 60px;
   width: 50px;
@@ -244,15 +216,12 @@ body {
   overflow: hidden;
   transition: margin-right 0.5s;
 }
-
 .section_menu .bloc_menu #menu .menu .menu_bloc .checkbox i {
   font-size: 25px;
   color: white;
   transition: all 0.4s ease;
-  -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
 .section_menu .bloc_menu .button {
   cursor: pointer;
   display: flex;
@@ -268,7 +237,6 @@ body {
   position: relative;
   transition: all 450ms;
 }
-
 .section_menu .bloc_menu .button:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -276,6 +244,16 @@ body {
 }
 
 /*animation menu*/
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -286,49 +264,59 @@ body {
     margin-top: 0px;
   }
 }
-
 .opacity {
-  animation: opacity 1s both;
+  -webkit-animation: opacity 1s both;
+          animation: opacity 1s both;
 }
 
 #bloc-1 {
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 #bloc-2 {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 #bloc-3 {
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 #bloc-4 {
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 #bloc-5 {
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 #bloc-6 {
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 #bloc-7 {
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 #bloc-8 {
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 #bloc-9 {
-  animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 #bloc-10 {
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 /* FOOTER*/
@@ -337,41 +325,35 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #525252;
+  background-color: rgb(82, 82, 82);
 }
-
 .footer .footer_blocs {
   display: inline;
   padding: 0 40px;
   width: 100%;
 }
-
 @media (min-width: 800px) {
   .footer .footer_blocs {
     height: 140px;
   }
 }
-
 .footer .footer_blocs .logo {
   font-family: "Shrikhand";
   color: white;
   font-size: 20px;
 }
-
 @media (min-width: 800px) {
   .footer .footer_blocs .logo {
     display: flex;
     justify-content: center;
   }
 }
-
 .footer .footer_links {
   display: inline-flex;
   flex-direction: column;
   width: auto;
   margin-bottom: 20px;
 }
-
 @media (min-width: 800px) {
   .footer .footer_links {
     flex-direction: row;
@@ -379,7 +361,6 @@ body {
     width: 100%;
   }
 }
-
 .footer .footer_links .footer_link {
   display: inline-flex;
   align-items: center;
@@ -388,23 +369,19 @@ body {
   height: 30px;
   cursor: pointer;
 }
-
 @media (min-width: 800px) {
   .footer .footer_links .footer_link {
     margin: 0 20px;
   }
 }
-
 .footer .footer_links .footer_link:hover .footer_title {
   text-decoration: none;
 }
-
 .footer .footer_links .footer_link i {
   margin-right: 14px;
   width: 15px;
 }
-
 .footer .footer_links .footer_link .footer_title {
   font-size: 16px;
   font-weight: 400;
-}
+}/*# sourceMappingURL=style_all.css.map */

@@ -35,16 +35,19 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+
 @keyframes cssAnimation {
   to {
     visibility: hidden;
   }
 }
+
 @-webkit-keyframes cssAnimation {
   to {
     visibility: hidden;
   }
 }
+
 .spinner {
   height: 100%;
   width: 100%;
