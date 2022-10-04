@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-/* MAIN */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -10,7 +9,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /*LOADER*/
@@ -198,11 +197,6 @@ a {
   justify-content: flex-start;
   width: 325px;
 }
-@media (min-width: 1210px) {
-  .fun_content .fun_title {
-    width: 940px;
-  }
-}
 .fun_content .fun_steps {
   display: flex;
   justify-content: center;
@@ -210,11 +204,6 @@ a {
   flex-direction: column;
   position: relative;
   margin-bottom: 15px;
-}
-@media (min-width: 1210px) {
-  .fun_content .fun_steps {
-    flex-direction: row;
-  }
 }
 .fun_content .fun_steps .fun_step {
   display: flex;
@@ -226,13 +215,6 @@ a {
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 1210px) {
-  .fun_content .fun_steps .fun_step {
-    padding: 10px 30px 10px 5px;
-    position: relative;
-    width: 33.33%;
-  }
 }
 .fun_content .fun_steps .fun_step:hover {
   opacity: 0.9;
@@ -256,19 +238,9 @@ a {
   position: relative;
   left: -30px;
 }
-@media (min-width: 1210px) {
-  .fun_content .fun_steps .fun_step .fun_number {
-    left: -15px;
-  }
-}
 .fun_content .fun_steps .fun_step .fun_icon {
   color: #7e7e7e;
   width: 40px;
-}
-@media (min-width: 1210px) {
-  .fun_content .fun_steps .fun_step .fun_icon {
-    margin: 0 5px 0 15px;
-  }
 }
 .fun_content .fun_steps .fun_step .fun_text {
   font-weight: 400;
@@ -290,11 +262,6 @@ a {
   justify-content: center;
   width: 325px;
 }
-@media (min-width: 800px) {
-  .restaurants .restaurants_title {
-    width: 700px;
-  }
-}
 .restaurants .restaurants_title .restaurant_title {
   display: flex;
   width: 100%;
@@ -305,14 +272,6 @@ a {
   flex-direction: column;
   height: auto;
 }
-@media (min-width: 800px) {
-  .restaurants .restaurant_cards {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 750px;
-  }
-}
 .restaurants .restaurant_cards .restaurant_card {
   display: flex;
   flex-direction: column;
@@ -321,11 +280,6 @@ a {
   border-radius: 20px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
   position: relative;
-}
-@media (min-width: 800px) {
-  .restaurants .restaurant_cards .restaurant_card {
-    margin: 20px;
-  }
 }
 .restaurants .restaurant_cards .restaurant_card .restaurant_image {
   width: 100%;
@@ -419,22 +373,10 @@ a {
   display: inline;
   width: 325px;
 }
-@media (min-width: 800px) {
-  .footer .footer_blocs {
-    height: 140px;
-    width: 100%;
-  }
-}
 .footer .footer_blocs .logo {
   font-family: "Shrikhand";
   color: white;
   font-size: 20px;
-}
-@media (min-width: 800px) {
-  .footer .footer_blocs .logo {
-    display: flex;
-    justify-content: center;
-  }
 }
 .footer .footer_links {
   display: inline-flex;
@@ -442,25 +384,14 @@ a {
   width: auto;
   margin-bottom: 20px;
 }
-@media (min-width: 800px) {
-  .footer .footer_links {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-}
 .footer .footer_links .footer_link {
   display: inline-flex;
   align-items: center;
   text-align: center;
   color: white;
+  text-decoration: none;
   height: 30px;
   cursor: pointer;
-}
-@media (min-width: 800px) {
-  .footer .footer_links .footer_link {
-    margin: 0 20px;
-  }
 }
 .footer .footer_links .footer_link:hover .footer_title {
   text-decoration: none;
@@ -472,4 +403,54 @@ a {
 .footer .footer_links .footer_link .footer_title {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  .restaurants .restaurants_title {
+    width: 700px;
+  }
+  .restaurants .restaurant_cards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 750px;
+  }
+  .restaurants .restaurant_cards .restaurant_card {
+    margin: 20px;
+  }
+  .footer .footer_blocs {
+    height: 140px;
+    width: 100%;
+  }
+  .footer .footer_blocs .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer_links {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer .footer_links .footer_link {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1210px) {
+  .fun_content .fun_title {
+    width: 940px;
+  }
+  .fun_content .fun_steps {
+    flex-direction: row;
+  }
+  .fun_content .fun_steps .fun_step {
+    padding: 10px 30px 10px 5px;
+    position: relative;
+    width: 33.33%;
+  }
+  .fun_content .fun_steps .fun_step .fun_number {
+    left: -15px;
+  }
+  .fun_content .fun_steps .fun_step .fun_icon {
+    margin: 0 5px 0 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
